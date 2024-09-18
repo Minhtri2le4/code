@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Macbook Sài Gòn</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Macbook", "iPhone", "Macbook99", "Ipad", "Imac", "Sunface"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/projects/elon-musk-bo-oc-dien-ro-cua-nhung-du-an-khong-tuong-3727158/index.html" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Elon Musk - bộ óc điên rồ của những dự án không tưởng</h2>
+                </a>
+                <br/>
+                <h5>vnexpress.net &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://tuoitre.vn/ceo-apple-tim-cook-mang-gi-den-viet-nam-20240416004805328.htm" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>CEO Apple Tim Cook mang gì đến Việt Nam?</h2>
+                </a>
+                <br/>
+                <h5>tuoitre.vn &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vov.vn/cong-nghe/doanh-so-iphone-xs-va-iphone-xr-tham-hai-apple-san-xuat-lai-iphone-x-843717.vov" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>Doanh số iPhone XS và iPhone XR thảm hại, Apple sản xuất lại iPhone X</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vov.vn/cong-nghe/tin-cong-nghe/claude-35-sonnet-tu-tin-tro-thanh-ai-manh-va-nhanh-hon-gpt-4o-cua-openai-post1103559.vov" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>Claude 3.5 Sonnet tự tin trở thành AI “mạnh và nhanh hơn GPT-4o” của OpenAI</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://www.thegioididong.com/tin-tuc/mua-macbook-can-luu-y-gi-1371311" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Mua Macbook cần lưu ý gì?</h2>
+                </a>
+                <br/>
+                <h5>thegioididong.com &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

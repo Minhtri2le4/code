@@ -1,0 +1,16 @@
+/* Banner */
+.banner {
+    background: #ff9e0e;
+    padding-top: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        padding-top: 5px;
+        border-bottom-width: 0.5px;
+    }
+}
+
+/* ======= End Banner ======== */
